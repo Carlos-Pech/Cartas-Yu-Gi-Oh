@@ -2,9 +2,11 @@ import React from "react";
 
 const CardInfo = ({ card }) => {
 return (
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="xl:w-1/ md:w-1/2 p-4 ">
+    {/* <div className="flex items-center justify-center"></div> */}
+
     <div class="c-card block  shadow-md hover:shadow-xl rounded-lg overflow-hidden bg-black">
-    <div class="flex">
+    <div class="flex ">
         <img
         src={card.card_images[0].image_url}
         alt={card.name}
@@ -24,16 +26,16 @@ return (
                 Atributo:
                 <span
                 class="-block ml-1  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-            font-bold
-            leading-none
-            text-white
-            bg-blue-400
-            rounded-full"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+        font-bold
+        leading-none
+        text-white
+        bg-blue-400
+        rounded-full"
                 >
                 {card.attribute}
                 </span>
@@ -54,16 +56,16 @@ return (
                 Ataque:
                 <span
                 class=" ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            bg-red-600
-            rounded-full"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        bg-red-600
+        rounded-full"
                 >
                 {card.atk}
                 </span>
@@ -72,16 +74,16 @@ return (
                 Defensa:
                 <span
                 class="  ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            bg-blue-600
-            rounded-full"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        bg-blue-600
+        rounded-full"
                 >
                 {card.def}
                 </span>
@@ -97,16 +99,16 @@ return (
                 Tipo de Cuadro:
                 <span
                 class=" ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            bg-blue-500
-            rounded-full"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        bg-blue-500
+        rounded-full"
                 >
                 {card.race}
                 </span>
@@ -116,49 +118,51 @@ return (
 
         <div class="flex justify-between items-center">
             <div>
-            <span class="inline-block mr-1 text-white">Juego de Cartas:</span>
+            <span class="inline-block mr-1 text-white">
+                Juego de Cartas:
+            </span>
             <span
                 class=" ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            rounded-full
-            bg-yellow-400"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        rounded-full
+        bg-yellow-400"
             >
                 {card.card_sets[0].set_name}
             </span>
             <span
                 class=" ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            rounded-full
-            bg-yellow-400"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        rounded-full
+        bg-yellow-400"
             >
                 {card.card_sets[1].set_name}
             </span>
             <span
                 class=" ml-1 font-bold  inline-flex
-            items-center
-            justify-center
-            px-2
-            py-1
-            text-xs
-        
-            leading-none
-            text-white
-            rounded-full
-            bg-yellow-400"
+        items-center
+        justify-center
+        px-2
+        py-1
+        text-xs
+    
+        leading-none
+        text-white
+        rounded-full
+        bg-yellow-400"
             >
                 {card.card_sets[2].set_name}
             </span>
@@ -173,6 +177,7 @@ return (
         </div>
     </div>
     </div>
+    
 </div>
 );
 };
