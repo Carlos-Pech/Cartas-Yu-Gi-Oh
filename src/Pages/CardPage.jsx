@@ -23,6 +23,8 @@ const CardPage = () => {
   }, [cardId]);
 
   return (
+    <h1 className='text-center mt-2 mb-4 text-3xl font-bold text-purple-700'>
+      Cartas <span className="text-yellow-500">Yu-Gi-Oh</span>
     <div className="min-h-screen body-font text-gray-600 -m-4 flex flex-wrap">
       {cards.length > 0 ? (
         cards.map((card) => <CardInfo card={card} key={card.id} />)
@@ -30,6 +32,7 @@ const CardPage = () => {
         <p>Loading...</p>
       )}
     </div>
+    </h1>
   );
 };
 

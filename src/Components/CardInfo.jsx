@@ -1,8 +1,9 @@
 import React from "react";
 
 const CardInfo = ({ card }) => {
-return (
-<div class="xl:w-1/ md:w-1/2 p-4 ">
+    return (
+    <div class="xl:w-1/ md:w-1/2 p-4 ">
+        <div>
     {/* <div className="flex items-center justify-center"></div> */}
 
     <div class="c-card block  shadow-md hover:shadow-xl rounded-lg overflow-hidden bg-black">
@@ -178,6 +179,7 @@ return (
     </div>
     </div>
     
+</div>
 </div>
 );
 };
